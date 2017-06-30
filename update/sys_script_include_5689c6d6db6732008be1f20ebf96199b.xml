@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_124705_gym_manag.ValidateEmailAddressg</api_name>
+        <client_callable>true</client_callable>
+        <description>On deman script include to validate email address syntax using regular expression</description>
+        <name>ValidateEmailAddressg</name>
+        <script><![CDATA[function ValidateEmailAddressg(emailStr){
+		
+	emailStr = emailStr + '';
+				if(emailStr.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+			return true;
+		}
+		else {
+		 return false;
+		}
+	}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-26 15:31:03</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5689c6d6db6732008be1f20ebf96199b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ValidateEmailAddressg</sys_name>
+        <sys_package display_value="Gym Management" source="x_124705_gym_manag">13ec0f94dba332008be1f20ebf96197e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gym Management">13ec0f94dba332008be1f20ebf96197e</sys_scope>
+        <sys_update_name>sys_script_include_5689c6d6db6732008be1f20ebf96199b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-06-27 09:58:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

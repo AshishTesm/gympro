@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_124705_gym_manag_class_booking</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Dear ${class.instructor.name}</p>
+<p>&nbsp;</p>
+<p>${sys_created_by} has joined your ${class.name}.</p>
+<p>&nbsp;</p>
+<p>view class:&nbsp;</p>
+<p>More details about class:</p>
+<p>(maybe add details of start times)</p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>New joiner to class</name>
+        <sms_alternate/>
+        <subject>${sys_created_by} has joined your class!</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-23 11:42:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3696f9d9db6332008be1f20ebf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New joiner to class</sys_name>
+        <sys_package display_value="Gym Management" source="x_124705_gym_manag">13ec0f94dba332008be1f20ebf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gym Management">13ec0f94dba332008be1f20ebf96197e</sys_scope>
+        <sys_update_name>sysevent_email_template_3696f9d9db6332008be1f20ebf9619db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-06-23 11:42:24</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

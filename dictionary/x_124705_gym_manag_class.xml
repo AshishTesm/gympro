@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Class" max_length="40" name="x_124705_gym_manag_class" type="collection">
+        <element label="Class type" mandatory="true" max_length="32" name="class_type" reference="x_124705_gym_manag_class_type" type="reference"/>
+        <element label="Description" max_length="2000" name="description" type="string"/>
+        <element label="Duration" max_length="40" name="duration" read_only="true" type="glide_duration"/>
+        <element label="End date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
+        <element label="Gym" mandatory="true" max_length="32" name="gym" reference="x_124705_gym_manag_gym" type="reference"/>
+        <element label="Instructor" mandatory="true" max_length="32" name="instructor" reference="sys_user" reference_qual="roles=x_124705_gym_manag.gym_instructor^EQ" reference_qual_condition="roles=x_124705_gym_manag.gym_instructor^EQ" type="reference"/>
+        <element label="Location" mandatory="true" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Start date" mandatory="true" max_length="40" name="start_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="class_type"/>
+        </index>
+        <index name="index2">
+            <element name="instructor"/>
+        </index>
+        <index name="index3">
+            <element name="gym"/>
+        </index>
+        <index name="index4">
+            <element name="location"/>
+        </index>
+    </element>
+</database>

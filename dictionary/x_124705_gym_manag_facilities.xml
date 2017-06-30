@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Facilities" max_length="40" name="x_124705_gym_manag_facilities" type="collection">
+        <element label="Description" max_length="2000" name="description" type="string"/>
+        <element label="Icon" max_length="40" name="icon" type="user_image"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

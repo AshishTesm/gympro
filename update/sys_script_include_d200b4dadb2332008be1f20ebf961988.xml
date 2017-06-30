@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_124705_gym_manag.GetLocation</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetLocation</name>
+        <script><![CDATA[var GetEmailAddress = Class.create();
+
+GetEmailAddress.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
+	
+	getLoc: function() {
+		var locRecord = new GlideRecord("core_company");
+		locRecord.get(this.getParameter('sysparm_name'));
+		return locRecord.Street + '';
+	},
+	type: 'GetLocation'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-26 09:13:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d200b4dadb2332008be1f20ebf961988</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>GetLocation</sys_name>
+        <sys_package display_value="Gym Management" source="x_124705_gym_manag">13ec0f94dba332008be1f20ebf96197e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gym Management">13ec0f94dba332008be1f20ebf96197e</sys_scope>
+        <sys_update_name>sys_script_include_d200b4dadb2332008be1f20ebf961988</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-06-26 10:25:04</sys_updated_on>
+    </sys_script_include>
+</record_update>

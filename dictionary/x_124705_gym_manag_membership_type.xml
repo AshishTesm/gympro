@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Membership type" max_length="40" name="x_124705_gym_manag_membership_type" type="collection">
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element choice="1" label="Payment Frequency" mandatory="true" max_length="40" name="payment_frequency" type="choice">
+            <choice>
+                <element label="Day" sequence="0" value="Day"/>
+                <element label="Week" sequence="1" value="Week"/>
+                <element label="Month" sequence="2" value="Month"/>
+                <element label="Year" sequence="3" value="Year"/>
+            </choice>
+        </element>
+        <element label="Price" mandatory="true" max_length="20" name="price" type="price"/>
+    </element>
+</database>
